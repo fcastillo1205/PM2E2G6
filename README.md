@@ -1,6 +1,6 @@
 Nota
 
-El vps no acepta archivos de mas de mas de 50 KB por ser gratuito nos vimos limitados a aumentar ese tamaño, por lo mismo se agrego la opcion de tomar una foto de la galeria
+El vps no acepta archivos de mas de mas de 50 KB por ser gratuito nos vimos limitados al querer aumentar ese tamaño, por lo mismo se agrego la opcion de tomar una foto de la galeria, ya que las camaras de hoy en dia toman imagenes superiores a 1 MB
 
 
 
