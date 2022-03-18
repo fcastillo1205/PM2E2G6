@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PM2E2GRUPO6.Clases;assembly=PM2E2GRUPO6"
+             x:Class="PM2E2GRUPO6.Vista.Listado_Sitios" 
+             Title="Lista de Sitios">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ConverterBase64ImageSource x:Key="Base64ToImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listas" ItemSelected="listas_ItemSelected" RowHeight="200">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10" >
+                                <Frame CornerRadius="10" HasShadow="True">
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+
+                                        <Image  Grid.RowSpan="3" Source="{Binding fotografia, Converter={StaticResource Base64ToImageConverter}}"   
+                                        HeightRequest="60" WidthRequest="60"/>
+
+                                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+
+                                            <Label   Grid.Row="1" Grid.Column="0"  Margin="2" FontAttributes="Bold" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Descripcion: "/>
+                                                        <Span  Text="{Binding descripcion}"  />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label   Grid.Row="2" Grid.Column="0"  Margin="2" FontAttributes="Bold" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Latitud: "/>
+                                                        <Span  Text="{Binding latitud}"  />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+                                            <Label   Grid.Row="3" Grid.Column="0"  Margin="2" FontAttributes="Bold" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Longitud: "/>
+                                                    <Span  Text="{Binding longitud}"  />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                            </Label>
+
+                                        </StackLayout>
+
+                                        <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                                            <Label Text=">" FontSize="20"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

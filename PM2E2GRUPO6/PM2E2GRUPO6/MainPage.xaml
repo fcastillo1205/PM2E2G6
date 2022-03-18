@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E2GRUPO6.MainPage" BackgroundColor="White" Title="Examen">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="DsStackLayout" TargetType="StackLayout">
+                <Setter Property="Margin" Value="5,10"/>
+                <Setter Property="VerticalOptions" Value="StartAndExpand"/>
+            </Style>
+
+            <Style x:Key="DsButtonFlotante" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="CornerRadius" Value="50"/>
+                <Setter Property="BorderColor" Value="#01ADBA"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="CornerRadius" Value="40"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="WidthRequest" Value="60"/>
+            </Style>
+            <Style x:Key="entryFormStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="10,0"/>
+                <Setter Property="FontFamily" Value="SansLight"/>
+                <Setter Property="FontSize" Value="18"/>
+
+
+                <Setter Property="PlaceholderColor" Value="Gray"/>
+                <Setter Property="TextColor" Value="#423F3E"/>
+            </Style>
+
+            <Style x:Key="frameStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="Padding" Value="3"/>
+                <Setter Property="HasShadow" Value="True"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="VerticalOptions" Value="StartAndExpand"/>
+                <Setter Property="BorderColor" Value="#E7E4E3"/>
+                <Setter Property="Margin" Value="20,5"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout>
+
+            <Image x:Name="imagen" Source="perfil.jpg" HorizontalOptions="Center" HeightRequest="250" />
+           
+            <Button  VerticalOptions="CenterAndExpand" x:Name="btnfotocap"   Clicked="btnfotocap_Clicked"   Text="Tomar Foto"></Button>
+            <Button   VerticalOptions="CenterAndExpand" x:Name="btnCapturarFoto"   Clicked="btnCapturarFoto_Clicked"  Visual="Material" Text="Seleccionar Foto de la Galeria"></Button>
+
+            <StackLayout VerticalOptions="CenterAndExpand" Orientation="Vertical" Margin="0,0,10,100" >
+                <Frame Style="{StaticResource frameStyle}">
+                    <Entry Style="{StaticResource entryFormStyle}"
+                        Keyboard="Plain"
+                        Placeholder="Latitud"
+                        IsReadOnly="True"
+                        x:Name="lbllatitud" />
+                </Frame>
+
+                <Frame Style="{StaticResource frameStyle}" >
+                    <Entry Style="{StaticResource entryFormStyle}"
+                        Keyboard="Plain"
+                        Placeholder="Longitud"
+                        IsReadOnly="True"
+                        x:Name="lbllongitud" />
+                </Frame>
+
+                <Frame Style="{StaticResource frameStyle}">
+                    <Entry Style="{StaticResource entryFormStyle}"
+                        Keyboard="Plain"
+                        Placeholder="Describa La Ubicacion"
+                        x:Name="txtdescripLarga" />
+                </Frame>
+
+                <Button VerticalOptions="CenterAndExpand" x:Name="btnsalnvar" Clicked="btnsalnvar_Clicked"  Text="Guardar Registro"></Button>
+                <Button VerticalOptions="CenterAndExpand" x:Name="btnlis"  Clicked="btnlis_Clicked" Visual="Material" Text="Ver Registros"></Button>
+            
+            </StackLayout>
+
+        </StackLayout>
+
+    </ScrollView>
+
+     
+
+</ContentPage>
