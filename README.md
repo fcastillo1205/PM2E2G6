@@ -1,15 +1,9 @@
-# PM2E2GRUPO6
+Participantes:
 
-Integrantes del Grupo 6
+Favio Roberto Aguilera - 201510060165
 
-* Nahomi Moradel (201810030050)
-* Cesar Pineda (201730010275)
-* Christian Alvarado (201910010261)
-* Marlon Giron (201820010222)
-* Juan Paz (201410010078)
-* Joel Turcios (200610520037)
-* vivian vargas (201710110052)
-* jairo perdomo (201910110022)
+Roberto Enrique Mejia - 201910110139
 
- No se coloco el nombre y numero de cuenta de todos en el commit por que es muy largo
-El Nombre del proyeto es PM2E2GRUPO6 refiriendose al grupo 6 pero por el  archivo work pero nos toco participar como equipo 4
+Danelia Ibeth Palacios - 201910080022
+
+Fernando Jose Castillo - 201910080192
