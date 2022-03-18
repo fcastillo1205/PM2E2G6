@@ -12,11 +12,11 @@
 
                 <Button Text="Tomar foto" x:Name="btnfotocap" Clicked="btnfotocap_Clicked" />
                 <Button Text="Tomar Foto Galeria" x:Name="btnCapturarFoto" Clicked="btnCapturarFoto_Clicked" />
-                
-                <Entry x:Name="txtId" />
+
+                <Entry x:Name="txtId"  IsReadOnly="True" />
                 <Entry x:Name="txtDescripcion" />
-                <Entry x:Name="txtLatitud" />
-                <Entry x:Name="txtLongitud" />
+                <Entry x:Name="txtLatitud" IsReadOnly="True"/>
+                <Entry x:Name="txtLongitud" IsReadOnly="True" />
                 <Button Text="Modificar Ubicacion" x:Name="btnsalnvar" Clicked="btnsalnvar_Clicked" />
                 
             </StackLayout>

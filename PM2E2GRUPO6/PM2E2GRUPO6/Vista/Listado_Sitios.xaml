@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PM2E2GRUPO6.Clases;assembly=PM2E2GRUPO6"
              x:Class="PM2E2GRUPO6.Vista.Listado_Sitios" 
-             Title="Lista de Sitios">
+            >
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:ConverterBase64ImageSource x:Key="Base64ToImageConverter" />
@@ -43,12 +43,12 @@
                                             </Label>
 
                                             <Label   Grid.Row="3" Grid.Column="0"  Margin="2" FontAttributes="Bold" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                            <Label.FormattedText>
-                                                <FormattedString>
-                                                    <Span Text="Longitud: "/>
-                                                    <Span  Text="{Binding longitud}"  />
-                                                </FormattedString>
-                                            </Label.FormattedText>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Longitud: "/>
+                                                        <Span  Text="{Binding longitud}"  />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
                                             </Label>
 
                                         </StackLayout>
@@ -63,7 +63,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
